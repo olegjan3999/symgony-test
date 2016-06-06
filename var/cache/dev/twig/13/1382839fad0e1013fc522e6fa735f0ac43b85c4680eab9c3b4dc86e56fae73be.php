@@ -11,7 +11,6 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
         $this->parent = $this->loadTemplate("base.html.twig", "main/category.html.twig", 2);
         $this->blocks = array(
             'body' => array($this, 'block_body'),
-            'stylesheets' => array($this, 'block_stylesheets'),
         );
     }
 
@@ -22,39 +21,33 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_94626bd4c953ff46a04604b373c39170814daab08e60779ae6ec0debe9af84fa = $this->env->getExtension("native_profiler");
-        $__internal_94626bd4c953ff46a04604b373c39170814daab08e60779ae6ec0debe9af84fa->enter($__internal_94626bd4c953ff46a04604b373c39170814daab08e60779ae6ec0debe9af84fa_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "main/category.html.twig"));
+        $__internal_13b7ddb8483e8edf9a7164f179bca01af7843a604370234b9afce2b8ab2689d8 = $this->env->getExtension("native_profiler");
+        $__internal_13b7ddb8483e8edf9a7164f179bca01af7843a604370234b9afce2b8ab2689d8->enter($__internal_13b7ddb8483e8edf9a7164f179bca01af7843a604370234b9afce2b8ab2689d8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "main/category.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_94626bd4c953ff46a04604b373c39170814daab08e60779ae6ec0debe9af84fa->leave($__internal_94626bd4c953ff46a04604b373c39170814daab08e60779ae6ec0debe9af84fa_prof);
+        $__internal_13b7ddb8483e8edf9a7164f179bca01af7843a604370234b9afce2b8ab2689d8->leave($__internal_13b7ddb8483e8edf9a7164f179bca01af7843a604370234b9afce2b8ab2689d8_prof);
 
     }
 
     // line 4
     public function block_body($context, array $blocks = array())
     {
-        $__internal_ebba88a04964a81ccea786fd096531fbe5e0831f98251a4790d5b0f9476b5d4c = $this->env->getExtension("native_profiler");
-        $__internal_ebba88a04964a81ccea786fd096531fbe5e0831f98251a4790d5b0f9476b5d4c->enter($__internal_ebba88a04964a81ccea786fd096531fbe5e0831f98251a4790d5b0f9476b5d4c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_22cecfcf998182f41f121c581de252e9607cfcfee8ce882472de4b256d77571b = $this->env->getExtension("native_profiler");
+        $__internal_22cecfcf998182f41f121c581de252e9607cfcfee8ce882472de4b256d77571b->enter($__internal_22cecfcf998182f41f121c581de252e9607cfcfee8ce882472de4b256d77571b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 5
-        echo "    <head>
-        ";
-        // line 6
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
-        echo "    </head>
-    <body>
+        echo "    <body>
     <h1>IT languages</h1>
 
     <div class=\"categories\" style=\"display: inline-block;\">
         <ul>
             ";
-        // line 15
+        // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["categories"]) ? $context["categories"] : $this->getContext($context, "categories")));
         foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-            // line 16
+            // line 11
             echo "                <li><a href=\"/category/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["category"], "name", array()), "html", null, true);
             echo "\">";
@@ -65,7 +58,7 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 18
+        // line 13
         echo "        </ul>
     </div>
     </body>
@@ -74,7 +67,7 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
     <div class=\"products\" style=\"display: inline-block; margin-left: 50px\">
 
         <h3>Language ";
-        // line 25
+        // line 20
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "name", array()), "html", null, true);
         echo "</h3>
 
@@ -85,14 +78,14 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
         </thead>
         <tbody>
                 ";
-        // line 33
+        // line 28
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["category"]) ? $context["category"] : $this->getContext($context, "category")), "products", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 34
+            // line 29
             echo "                <tr>
                     <td><a href=\"/product/";
-            // line 35
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute($context["product"], "id", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["product"], "name", array()), "html", null, true);
@@ -103,7 +96,7 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 33
         echo "        </tbody>
     </table>
 
@@ -111,23 +104,7 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
 
 ";
         
-        $__internal_ebba88a04964a81ccea786fd096531fbe5e0831f98251a4790d5b0f9476b5d4c->leave($__internal_ebba88a04964a81ccea786fd096531fbe5e0831f98251a4790d5b0f9476b5d4c_prof);
-
-    }
-
-    // line 6
-    public function block_stylesheets($context, array $blocks = array())
-    {
-        $__internal_a4548bd51f0dcfb6c0db8085d2903034644e37e5d15e71282890da6b684e6102 = $this->env->getExtension("native_profiler");
-        $__internal_a4548bd51f0dcfb6c0db8085d2903034644e37e5d15e71282890da6b684e6102->enter($__internal_a4548bd51f0dcfb6c0db8085d2903034644e37e5d15e71282890da6b684e6102_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        // line 7
-        echo "            <link href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/framework/css/style.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-        ";
-        
-        $__internal_a4548bd51f0dcfb6c0db8085d2903034644e37e5d15e71282890da6b684e6102->leave($__internal_a4548bd51f0dcfb6c0db8085d2903034644e37e5d15e71282890da6b684e6102_prof);
+        $__internal_22cecfcf998182f41f121c581de252e9607cfcfee8ce882472de4b256d77571b->leave($__internal_22cecfcf998182f41f121c581de252e9607cfcfee8ce882472de4b256d77571b_prof);
 
     }
 
@@ -143,18 +120,13 @@ class __TwigTemplate_e08b2127b514f4510ba6cbd631dc318e8e7d48e2c3de55335484079f7aa
 
     public function getDebugInfo()
     {
-        return array (  125 => 7,  119 => 6,  107 => 38,  96 => 35,  93 => 34,  89 => 33,  78 => 25,  69 => 18,  58 => 16,  54 => 15,  46 => 9,  44 => 6,  41 => 5,  35 => 4,  11 => 2,);
+        return array (  100 => 33,  89 => 30,  86 => 29,  82 => 28,  71 => 20,  62 => 13,  51 => 11,  47 => 10,  40 => 5,  34 => 4,  11 => 2,);
     }
 }
 /* {# app/Resources/views/lucky/number.html.twig #}*/
 /* {% extends 'base.html.twig' %}*/
 /* */
 /* {% block body %}*/
-/*     <head>*/
-/*         {% block stylesheets %}*/
-/*             <link href="{{ asset('bundles/framework/css/style.css') }}" rel="stylesheet">*/
-/*         {% endblock %}*/
-/*     </head>*/
 /*     <body>*/
 /*     <h1>IT languages</h1>*/
 /* */

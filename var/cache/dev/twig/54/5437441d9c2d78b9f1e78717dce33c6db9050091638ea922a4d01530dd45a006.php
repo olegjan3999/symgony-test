@@ -19,8 +19,8 @@ class __TwigTemplate_c467beb9d88f7cf3078742ec187221fb9dcc043ea3d89011b1d16d60803
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0b4825657b0904a29ac315aba88e7778aa1fa973e95f56a281242b41d2ca3a74 = $this->env->getExtension("native_profiler");
-        $__internal_0b4825657b0904a29ac315aba88e7778aa1fa973e95f56a281242b41d2ca3a74->enter($__internal_0b4825657b0904a29ac315aba88e7778aa1fa973e95f56a281242b41d2ca3a74_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_2f5eb1eb7d2ba662a1699b2c3b90ac12601398a0e64ba60fbe08a86afe1d4ee1 = $this->env->getExtension("native_profiler");
+        $__internal_2f5eb1eb7d2ba662a1699b2c3b90ac12601398a0e64ba60fbe08a86afe1d4ee1->enter($__internal_2f5eb1eb7d2ba662a1699b2c3b90ac12601398a0e64ba60fbe08a86afe1d4ee1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -38,65 +38,69 @@ class __TwigTemplate_c467beb9d88f7cf3078742ec187221fb9dcc043ea3d89011b1d16d60803
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
+        <link href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("bundles/framework/css/body.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
     </head>
     <body>
         ";
-        // line 10
-        $this->displayBlock('body', $context, $blocks);
         // line 11
+        $this->displayBlock('body', $context, $blocks);
+        // line 12
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
+        // line 13
         echo "    </body>
 </html>
 ";
         
-        $__internal_0b4825657b0904a29ac315aba88e7778aa1fa973e95f56a281242b41d2ca3a74->leave($__internal_0b4825657b0904a29ac315aba88e7778aa1fa973e95f56a281242b41d2ca3a74_prof);
+        $__internal_2f5eb1eb7d2ba662a1699b2c3b90ac12601398a0e64ba60fbe08a86afe1d4ee1->leave($__internal_2f5eb1eb7d2ba662a1699b2c3b90ac12601398a0e64ba60fbe08a86afe1d4ee1_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_ff6d4e667b63b6ea4dc2f21a1d3da3ebf94768106746f81b5b33353e20f3a0bb = $this->env->getExtension("native_profiler");
-        $__internal_ff6d4e667b63b6ea4dc2f21a1d3da3ebf94768106746f81b5b33353e20f3a0bb->enter($__internal_ff6d4e667b63b6ea4dc2f21a1d3da3ebf94768106746f81b5b33353e20f3a0bb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_e57a68ac749793757ba5df976170311bd7f8684a38897423e2dcdde1dcd08540 = $this->env->getExtension("native_profiler");
+        $__internal_e57a68ac749793757ba5df976170311bd7f8684a38897423e2dcdde1dcd08540->enter($__internal_e57a68ac749793757ba5df976170311bd7f8684a38897423e2dcdde1dcd08540_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_ff6d4e667b63b6ea4dc2f21a1d3da3ebf94768106746f81b5b33353e20f3a0bb->leave($__internal_ff6d4e667b63b6ea4dc2f21a1d3da3ebf94768106746f81b5b33353e20f3a0bb_prof);
+        $__internal_e57a68ac749793757ba5df976170311bd7f8684a38897423e2dcdde1dcd08540->leave($__internal_e57a68ac749793757ba5df976170311bd7f8684a38897423e2dcdde1dcd08540_prof);
 
     }
 
     // line 6
     public function block_stylesheets($context, array $blocks = array())
     {
-        $__internal_868c067b99892e3db328e190769b630ae6e92415f83ad0c9aa4991acf5f02b2c = $this->env->getExtension("native_profiler");
-        $__internal_868c067b99892e3db328e190769b630ae6e92415f83ad0c9aa4991acf5f02b2c->enter($__internal_868c067b99892e3db328e190769b630ae6e92415f83ad0c9aa4991acf5f02b2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_52d02904da02a91f54451dae5c2ef16d6195e492551f0b803ac2654fb0e9d050 = $this->env->getExtension("native_profiler");
+        $__internal_52d02904da02a91f54451dae5c2ef16d6195e492551f0b803ac2654fb0e9d050->enter($__internal_52d02904da02a91f54451dae5c2ef16d6195e492551f0b803ac2654fb0e9d050_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         
-        $__internal_868c067b99892e3db328e190769b630ae6e92415f83ad0c9aa4991acf5f02b2c->leave($__internal_868c067b99892e3db328e190769b630ae6e92415f83ad0c9aa4991acf5f02b2c_prof);
-
-    }
-
-    // line 10
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_2fd298363347154c08113ae898b98da4217cea3dd85fa00fa5e3402a839bd134 = $this->env->getExtension("native_profiler");
-        $__internal_2fd298363347154c08113ae898b98da4217cea3dd85fa00fa5e3402a839bd134->enter($__internal_2fd298363347154c08113ae898b98da4217cea3dd85fa00fa5e3402a839bd134_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_2fd298363347154c08113ae898b98da4217cea3dd85fa00fa5e3402a839bd134->leave($__internal_2fd298363347154c08113ae898b98da4217cea3dd85fa00fa5e3402a839bd134_prof);
+        $__internal_52d02904da02a91f54451dae5c2ef16d6195e492551f0b803ac2654fb0e9d050->leave($__internal_52d02904da02a91f54451dae5c2ef16d6195e492551f0b803ac2654fb0e9d050_prof);
 
     }
 
     // line 11
-    public function block_javascripts($context, array $blocks = array())
+    public function block_body($context, array $blocks = array())
     {
-        $__internal_0e0e4899d84347ca9d41c9e8e38ffb4484b25e917f14aa080ed0c5228558e147 = $this->env->getExtension("native_profiler");
-        $__internal_0e0e4899d84347ca9d41c9e8e38ffb4484b25e917f14aa080ed0c5228558e147->enter($__internal_0e0e4899d84347ca9d41c9e8e38ffb4484b25e917f14aa080ed0c5228558e147_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_e7c4bee22761a5152bb63803f07b8ce0da69a6e45f9f7fc9669a6443c34cd612 = $this->env->getExtension("native_profiler");
+        $__internal_e7c4bee22761a5152bb63803f07b8ce0da69a6e45f9f7fc9669a6443c34cd612->enter($__internal_e7c4bee22761a5152bb63803f07b8ce0da69a6e45f9f7fc9669a6443c34cd612_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_0e0e4899d84347ca9d41c9e8e38ffb4484b25e917f14aa080ed0c5228558e147->leave($__internal_0e0e4899d84347ca9d41c9e8e38ffb4484b25e917f14aa080ed0c5228558e147_prof);
+        $__internal_e7c4bee22761a5152bb63803f07b8ce0da69a6e45f9f7fc9669a6443c34cd612->leave($__internal_e7c4bee22761a5152bb63803f07b8ce0da69a6e45f9f7fc9669a6443c34cd612_prof);
+
+    }
+
+    // line 12
+    public function block_javascripts($context, array $blocks = array())
+    {
+        $__internal_d8179220bc936e5b40ee33aa6378efd212389c9cab9285992b225867eade667b = $this->env->getExtension("native_profiler");
+        $__internal_d8179220bc936e5b40ee33aa6378efd212389c9cab9285992b225867eade667b->enter($__internal_d8179220bc936e5b40ee33aa6378efd212389c9cab9285992b225867eade667b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        
+        $__internal_d8179220bc936e5b40ee33aa6378efd212389c9cab9285992b225867eade667b->leave($__internal_d8179220bc936e5b40ee33aa6378efd212389c9cab9285992b225867eade667b_prof);
 
     }
 
@@ -112,7 +116,7 @@ class __TwigTemplate_c467beb9d88f7cf3078742ec187221fb9dcc043ea3d89011b1d16d60803
 
     public function getDebugInfo()
     {
-        return array (  93 => 11,  82 => 10,  71 => 6,  59 => 5,  50 => 12,  47 => 11,  45 => 10,  38 => 7,  36 => 6,  32 => 5,  26 => 1,);
+        return array (  97 => 12,  86 => 11,  75 => 6,  63 => 5,  54 => 13,  51 => 12,  49 => 11,  43 => 8,  38 => 7,  36 => 6,  32 => 5,  26 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -122,6 +126,7 @@ class __TwigTemplate_c467beb9d88f7cf3078742ec187221fb9dcc043ea3d89011b1d16d60803
 /*         <title>{% block title %}Welcome!{% endblock %}</title>*/
 /*         {% block stylesheets %}{% endblock %}*/
 /*         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />*/
+/*         <link href="{{ asset('bundles/framework/css/body.css') }}" rel="stylesheet">*/
 /*     </head>*/
 /*     <body>*/
 /*         {% block body %}{% endblock %}*/
