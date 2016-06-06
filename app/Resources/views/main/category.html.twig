@@ -2,7 +2,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Categories</h1>
+    <head>
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/framework/css/style.css') }}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+    <h1>IT languages</h1>
 
     <div class="categories" style="display: inline-block;">
         <ul>
@@ -11,13 +17,14 @@
             {% endfor %}
         </ul>
     </div>
+    </body>
 
 
     <div class="products" style="display: inline-block; margin-left: 50px">
 
-        <h3>Category {{ category.name }}</h3>
+        <h3>Language {{ category.name }}</h3>
 
-<p>Products for this category: </p>
+<p>Developers for this language: </p>
     <table>
         <thead>
             <th>Name</th>

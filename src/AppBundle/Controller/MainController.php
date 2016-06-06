@@ -15,7 +15,7 @@ class MainController extends Controller
     public function indexAction()
     {
         //Получаем все Продукты из базы данных
-        $products = $this->get('doctrine')->getRepository('AppBundle:Product', 'default')->findBy(array(), array(),3);
+        $products = $this->get('doctrine')->getRepository('AppBundle:Product', 'default')->findAll();
         //Получаем все Категории из базы данных
         $categories = $this->get('doctrine')->getRepository('AppBundle:Category', 'default')->findAll();
 

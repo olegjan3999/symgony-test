@@ -2,16 +2,22 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Products</h1>
+    <head>
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/framework/css/style.css') }}" rel="stylesheet">
+        {% endblock %}
+    </head>
+    <body>
+    <h1>Developers</h1>
 
     <div class="products" style="display: inline-block; margin-left: 50px">
 
-        <h3>Product # {{ product.id }}</h3>
+        <h3>Developer # {{ product.id }}</h3>
 
-        <p>Product name : {{ product.name }}</p>
+        <p>Developer name : {{ product.name }}</p>
 
         <div class="categories" style="display: inline-block;">
-            <p>Categories for this product</p>
+            <p>Languages for this developer</p>
             <ul>
                 {% for category in product.categories %}
                     <li><a href="/category/{{ category.name }}">{{ category.name }}</a></li>
@@ -20,5 +26,6 @@
         </div>
 
     </div>
+    </body>
 
 {% endblock %}

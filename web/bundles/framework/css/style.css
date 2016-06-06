@@ -1,0 +1,26 @@
+body {
+    background:url(../images/main-bg.jpg) repeat-x;
+    color: teal;
+    margin: 0px auto;
+    max-width: 1200px;
+    min-width: 700px;
+}
+h1 {
+    color: darkblue;
+}
+li {
+    display: inline-block;
+}
+li a{
+    text-transform: uppercase;
+    margin: 0 5px;
+    color: darkred;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.categories li:hover, .products td:hover{
+    background: paleturquoise;
+
+}
+
