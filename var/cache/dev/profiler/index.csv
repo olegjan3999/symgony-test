@@ -18,3 +18,4 @@ df35d5,127.0.0.1,GET,http://localhost:8000/bundles/framework/css/style.css,14651
 6042b6,127.0.0.1,GET,http://localhost:8000/bundles/framework/images/main-bg.jpg,1465194869,f097f3,200
 f097f3,127.0.0.1,GET,http://localhost:8000/bundles/framework/images/main-bg.jpg,1465194869,,404
 e38de5,127.0.0.1,GET,http://localhost:8000/category/JavaScript,1465195015,,200
+496138,127.0.0.1,GET,http://localhost:8000/category/JavaScript,1465195085,,200
